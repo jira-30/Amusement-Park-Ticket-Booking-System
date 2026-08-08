@@ -10,6 +10,26 @@ The Amusement Park Ticket Booking System streamlines how customers select rides 
 
 The system is backed by a relational MySQL database with a strictly defined schema and enforced relationships between rides, customers, ticket types, and bookings, ensuring transactional integrity, accurate ride-capacity tracking, and reliable analytics. All CRUD operations run through a Node.js/Express backend, with SQL queries handling validation, joins, and aggregation for reporting.
 
+## FEATURES
+### Customer's View
+- [x] Browse available rides and ticket types
+- [x] Book single or multiple tickets per ride
+- [x] Submit customer details as part of booking
+
+### Administrator View
+- [x] View a live, continuously updated list of customer bookings
+- [x] Cancel existing bookings
+- [x] View ride analytics (booking frequency per ride) to identify popular attractions
+
+### System
+- [x] Relational schema enforcing data integrity across rides, customers, ticket types, and bookings
+- [x] Accurate ride-capacity tracking via enforced relationships
+- [x] Aggregated SQL queries powering the analytics dashboard
+
+
+
+
+
 
 
 
