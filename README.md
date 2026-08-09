@@ -26,6 +26,14 @@ The system is backed by a relational MySQL database with a strictly defined sche
 - [x] Accurate ride-capacity tracking via enforced relationships
 - [x] Aggregated SQL queries powering the analytics dashboard
 
+## TECH STACK
+| LAYER              | TECHNOLOGY |
+|--------------------|-----------:|
+| Backend            | Node.js, Express 4     |
+| Database           | MySQL (via mysql2 driver)    |
+| Middleware         | cors, body-parser |
+| Frontend           | JavaScript, HTML, CSS (some TypeScript)|
+
 
 
 
