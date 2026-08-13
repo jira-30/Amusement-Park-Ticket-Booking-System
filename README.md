@@ -120,6 +120,26 @@ Connect to Supabase by setting the required environment variables (check src/ fo
 ## FINAL OUTPUT
 ![Final_output](Github-AmusementParkTicketBookingSystem/Report%20and%20Presentation/FinalOutput_AmusementParkTicketingSystem.png)
 
+## USAGE & FUTURE ENHANCEMENT
+**Current usage**
+
+1. As a customer:
++ Browse the list of available rides and ticket types.
++ Select a single or multiple-ticket booking.
++ Enter customer details to confirm the booking.
+
+2. As an administrator:
++ Access the admin view to monitor bookings in real time.
++ Review and cancel existing bookings as needed.
++ Reference the analytics panel to identify the most frequently booked rides.
+
+**Planned enhancements**
++ Integration of a payment gateway to support real transactions
++ Automated email confirmation upon successful booking
++ Role-based authentication to distinguish administrator and customer access
++ A fully responsive, mobile-optimized interface
++ Extended analytics, including peak booking periods and revenue per ride
+
 ## REPRODUCIBILITY & BEST PRACTICES
 **Status of this project against common setup/reproducibility practices:**
 
@@ -127,7 +147,6 @@ Connect to Supabase by setting the required environment variables (check src/ fo
 - [x] Lockfiles committed (package-lock.json) for consistent installs
 - [x] Database schema versioned via migration file (supabase/migrations/)
 - [x] EER diagram included for schema reference
-- [ ] Environment variables externalized (.env / .env.example) — currently, MySQL credentials are set directly in server.js
 - [ ] Single, consistent tech stack — repo currently contains two parallel implementations (Express/MySQL and React/Vite/Supabase)
 - [ ] Automated tests
 - [ ] CI/CD or lint/format checks on push
@@ -135,6 +154,8 @@ Connect to Supabase by setting the required environment variables (check src/ fo
 - [ ] License file
 
 This list reflects the current state honestly rather than overstating readiness — useful both as documentation and as a personal to-do list for hardening the project further.
+
+
 
 
 
