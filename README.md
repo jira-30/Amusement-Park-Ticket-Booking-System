@@ -44,7 +44,7 @@ The database schema centers on four core entities:
 Enforced foreign key relationships between these tables keep booking data consistent and make ride-capacity and analytics queries reliable.
 
 ## EER DIAGRAM
-![EER Diagram](Amusement-Park-Ticket-Booking-System/Github-AmusementParkTicketBookingSystem/Report and Presentation/EER_AmusementParkTicketingSystem.png)
+![EER_Diagram](Github-AmusementParkTicketBookingSystem/Report and Presentation/EER_AmusementParkTicketingSystem.png)
 
 
 
