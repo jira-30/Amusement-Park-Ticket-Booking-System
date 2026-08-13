@@ -61,6 +61,7 @@ The diagram above shows the relationships between Customers, Rides, Ticket Types
 *Note: This is a prototype. There is no production dataset or seed script. Test records (sample names and rides) were entered manually through MySQL Workbench during development to verify that the backend correctly reads from and writes to the database, and that the frontend reflects those changes.*
 
 ## PROJECT STRUCTURE
+```
 Amusement-Park-Ticket-Booking-System/
 ├── Github-AmusementParkTicketBookingSystem/
 │   ├── Backend/
@@ -87,6 +88,7 @@ Amusement-Park-Ticket-Booking-System/
 │   └── migrations/
 │       └── 20250810164232_shiny_limit.sql
 └── README.md
+```
 
 ## INSTALLATION
 **Prerequisites**
