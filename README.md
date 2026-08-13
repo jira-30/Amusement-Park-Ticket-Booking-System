@@ -1,7 +1,8 @@
 # AMUSEMENT PARK TICKET BOOKING SYSTEM
 
 **Author:** Shruthi Ravi
-***Contributions**:
+
+**Contributions**:
 + Kavya Selvaraj - Report and Documentation
 + Anuj Banshal - Presentation
 
