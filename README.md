@@ -34,6 +34,16 @@ The system is backed by a relational MySQL database with a strictly defined sche
 | Middleware         | cors, body-parser |
 | Frontend           | JavaScript, HTML, CSS (some TypeScript)|
 
+Entry point: Backend/server.js. Start with npm start from the Backend/ folder.
+
+**React frontend (Vite + Supabase)**
+| LAYER              | TECHNOLOGY |
+|--------------------|-----------:|
+|Frontend|React, TypeScript, Vite|
+|Backend/DB| Supabase (Postgres)|
+
+Entry point: src/main.tsx. Database schema/migrations are in supabase/migrations/.
+
 ## DATA MODEL
 The database schema centers on four core entities:
 + Customers --> customer details captured at booking time
@@ -45,6 +55,63 @@ Enforced foreign key relationships between these tables keep booking data consis
 
 ## EER DIAGRAM
 ![EER_Diagram](Github-AmusementParkTicketBookingSystem/Report%20and%20Presentation/EER_AmusementParkTicketingSystem.png)
+
+The diagram above shows the relationships between Customers, Rides, Ticket Types, and Bookings, including foreign keys enforcing referential integrity across the schema.
+
+*Note: This is a prototype. There is no production dataset or seed script. Test records (sample names and rides) were entered manually through MySQL Workbench during development to verify that the backend correctly reads from and writes to the database, and that the frontend reflects those changes.*
+
+## PROJECT STRUCTURE
+Amusement-Park-Ticket-Booking-System/
+├── Github-AmusementParkTicketBookingSystem/
+│   ├── Backend/
+│   │   ├── server.js
+│   │   ├── package.json
+│   │   └── package-lock.json
+│   ├── Frontend/
+│   │   ├── public/
+│   │   │   └── index.html
+│   │   ├── src/
+│   │   ├── package.json
+│   │   └── package-lock.json
+│   └── Report and Presentation/
+│       ├── EER_AmusementParkTicketingSystem.png
+│       ├── FinalOutput_AmusementParkTicketingSystem.png
+│       ├── Shruthi_Ravi_FinalProjectPresentation.pptx
+│       └── Shruthi_Ravi_FinalProjectReport.pdf
+├── src/
+│   ├── App.tsx
+│   ├── main.tsx
+│   ├── index.css
+│   └── vite-env.d.ts
+├── supabase/
+│   └── migrations/
+│       └── 20250810164232_shiny_limit.sql
+└── README.md
+
+## INSTALLATION
+**Prerequisites**
++ Node.js (v16 or later recommended)
++ MySQL server (for the Backend/Frontend implementation)
++ A Supabase project (for the React/Vite implementation)
++ Backend + Frontend (Express + MySQL)
+
+bash
+git clone https://github.com/jira-30/Amusement-Park-Ticket-Booking-System.git
+cd Amusement-Park-Ticket-Booking-System/Github-AmusementParkTicketBookingSystem/Backend
+npm install
+npm start
+
+Check server.js for MySQL connection details and the port it listens on, and update them to match your local database. In a separate terminal, install and run the Frontend the same way from the Frontend/ folder.
+
+React frontend (Vite + Supabase)
+bash
+cd Amusement-Park-Ticket-Booking-System
+npm install
+npm run dev
+
+Connect to Supabase by setting the required environment variables (check src/ for how the Supabase client is initialized), then apply the migration in supabase/migrations/ to your Supabase project.
+
+
 
 
 
