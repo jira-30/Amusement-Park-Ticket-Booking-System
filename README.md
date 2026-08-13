@@ -1,6 +1,9 @@
 # AMUSEMENT PARK TICKET BOOKING SYSTEM
 
-**Author:** Shruthi Ravi, Kavya Selvaraj, Anuj Banshal.
+**Author:** Shruthi Ravi
+***Contributions**:
++ Kavya Selvaraj - Report and Documentation
++ Anuj Banshal - Presentation
 
 **Task:** To design and build a full-stack ticket booking system for an amusement park, where customers can select rides and book single or multiple tickets, and administrators can manage customer records, cancel bookings, and view analytics on ride popularity
 
@@ -112,6 +115,25 @@ npm install
 npm run dev
 ```
 Connect to Supabase by setting the required environment variables (check src/ for how the Supabase client is initialized), then apply the migration in supabase/migrations/ to your Supabase project.
+
+## FINAL OUTPUT
+![Final_output](Github-AmusementParkTicketBookingSystem/Report%20and%20Presentation/FinalOutput_AmusementParkTicketingSystem.png)
+
+## REPRODUCIBILITY & BEST PRACTICES
+**Status of this project against common setup/reproducibility practices:**
+
+- [x] Dependencies declared in package.json (both implementations)
+- [x] Lockfiles committed (package-lock.json) for consistent installs
+- [x] Database schema versioned via migration file (supabase/migrations/)
+- [x] EER diagram included for schema reference
+- [ ] Environment variables externalized (.env / .env.example) — currently, MySQL credentials are set directly in server.js
+- [ ] Single, consistent tech stack — repo currently contains two parallel implementations (Express/MySQL and React/Vite/Supabase)
+- [ ] Automated tests
+- [ ] CI/CD or lint/format checks on push
+- [ ] Seed script or sample data for local setup (current test data was entered manually via MySQL Workbench)
+- [ ] License file
+
+This list reflects the current state honestly rather than overstating readiness — useful both as documentation and as a personal to-do list for hardening the project further.
 
 
 
