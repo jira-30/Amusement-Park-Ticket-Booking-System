@@ -34,7 +34,14 @@ The system is backed by a relational MySQL database with a strictly defined sche
 | Middleware         | cors, body-parser |
 | Frontend           | JavaScript, HTML, CSS (some TypeScript)|
 
+## DATA MODEL
+The database schema centers on four core entities:
++ Customers — customer details captured at booking time
++ Rides — ride information managed by administrators
++ Ticket Types — single vs. multiple ticket options
++ Bookings — links customers, rides, and ticket types; tracks status (active/cancelled)
 
+Enforced foreign key relationships between these tables keep booking data consistent and make ride-capacity and analytics queries reliable.
 
 
 
