@@ -95,22 +95,22 @@ Amusement-Park-Ticket-Booking-System/
 + Node.js (v16 or later recommended)
 + MySQL server (for the Backend/Frontend implementation)
 + A Supabase project (for the React/Vite implementation)
-+ Backend + Frontend (Express + MySQL)
 
-bash
+**Backend + Frontend (Express + MySQL)**
+```bash
 git clone https://github.com/jira-30/Amusement-Park-Ticket-Booking-System.git
 cd Amusement-Park-Ticket-Booking-System/Github-AmusementParkTicketBookingSystem/Backend
 npm install
 npm start
-
+```
 Check server.js for MySQL connection details and the port it listens on, and update them to match your local database. In a separate terminal, install and run the Frontend the same way from the Frontend/ folder.
 
-React frontend (Vite + Supabase)
-bash
+**React frontend (Vite + Supabase)**
+```bash
 cd Amusement-Park-Ticket-Booking-System
 npm install
 npm run dev
-
+```
 Connect to Supabase by setting the required environment variables (check src/ for how the Supabase client is initialized), then apply the migration in supabase/migrations/ to your Supabase project.
 
 
