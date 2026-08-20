@@ -147,13 +147,13 @@ Connect to Supabase by setting the required environment variables (check src/ fo
 - [x] Lockfiles committed (package-lock.json) for consistent installs
 - [x] Database schema versioned via migration file (supabase/migrations/)
 - [x] EER diagram included for schema reference
-- [ ] Single, consistent tech stack — repo currently contains two parallel implementations (Express/MySQL and React/Vite/Supabase)
+- [ ] Single, consistent tech stack repo ,currently contains two parallel implementations (Express/MySQL and React/Vite/Supabase)
 - [ ] Automated tests
 - [ ] CI/CD or lint/format checks on push
 - [ ] Seed script or sample data for local setup (current test data was entered manually via MySQL Workbench)
 - [ ] License file
 
-This list reflects the current state honestly rather than overstating readiness — useful both as documentation and as a personal to-do list for hardening the project further.
+This list reflects the current state honestly rather than overstating readiness that is useful both as documentation and as a personal to-do list for hardening the project further.
 
 
 
